@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{5B70794E-99F4-4B94-B23D-D6AC49652574}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{D96A3F86-5FE1-4442-87CD-6BF5395E8F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrollTolkien", "Modules\TrollTolkien\TrollTolkien.csproj", "{D447AA1A-8848-42A4-8257-B7C9945CD04C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5B70794E-99F4-4B94-B23D-D6AC49652574} = {5B70794E-99F4-4B94-B23D-D6AC49652574}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B70794E-99F4-4B94-B23D-D6AC49652574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B70794E-99F4-4B94-B23D-D6AC49652574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B70794E-99F4-4B94-B23D-D6AC49652574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B70794E-99F4-4B94-B23D-D6AC49652574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D447AA1A-8848-42A4-8257-B7C9945CD04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D447AA1A-8848-42A4-8257-B7C9945CD04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D447AA1A-8848-42A4-8257-B7C9945CD04C} = {D96A3F86-5FE1-4442-87CD-6BF5395E8F7A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C882425-A6C8-4630-8534-B0CD5DB5172D}
+	EndGlobalSection
+EndGlobal

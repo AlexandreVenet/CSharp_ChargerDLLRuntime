@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\App\App.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="goto :$(ConfigurationName)&#xD;&#xA;&#xD;&#xA;:Debug&#xD;&#xA;echo &quot;Débogage&quot;&#xD;&#xA;copy &quot;$(TargetPath)&quot; &quot;..\..\App\bin\Debug\net8.0\Modules\$(TargetFileName)&quot;&#xD;&#xA;goto :exit&#xD;&#xA;&#xD;&#xA;:Release&#xD;&#xA;echo &quot;Production&quot;&#xD;&#xA;echo &quot;TO DO&quot;&#xD;&#xA;goto :exit&#xD;&#xA;&#xD;&#xA;:exit" />
+  </Target>
+
+</Project>
