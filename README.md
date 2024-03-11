@@ -1,4 +1,4 @@
-# TEST_chargerDLLRuntime
+# CSharp_ChargerDLLRuntime
 
 Projet d'exemple.
 - Utilisation par un programme de **librairies** externes au format `.dll`. 
